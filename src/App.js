@@ -11,14 +11,14 @@ import ContactList from './component/ContactList'
 
 function App() {
   return (
-    <div>
+    <div className='contacts-container'>
       <h1 className='title'>연락처</h1>
       <Container>
-        <Row>
-          <Col>
+        <Row className='contacts-row'>
+          <Col className='contacts-col contacts-col-left'>
             <ContactForm />
           </Col>
-          <Col>
+          <Col className='contacts-col contacts-col-right'>
             <ContactList />
           </Col>
         </Row>

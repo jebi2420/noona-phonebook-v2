@@ -1,6 +1,25 @@
 .title{
   text-align: center;
+  margin-bottom: 1.3em;
 }
+
+.contacts-container{
+  padding-top: 5em;
+}
+
+.contacts-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-col{
+  border: 1px solid rgba(175, 175, 175, 0.452);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 1.5em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 
 .contact-list-area{
   width: 100%;
@@ -15,5 +34,14 @@
   padding: 1.2em 0.5em;
   border: 1px solid rgb(218, 218, 218);
   border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+@media screen and (max-width: 48rem){
+  .container{
+  }
+  .contacts-row{
+    padding-right: 0.6em;
+    flex-flow: column;
+  }
 }
