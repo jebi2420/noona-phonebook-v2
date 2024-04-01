@@ -23,7 +23,7 @@ const ContactList = () => {
   };
 
   return (
-    <div>
+    <div className='contact-list-area'>
       <SearchBox />
       {keyword !== "" && (
         <Button onClick={resetSearch} className="mt-3">

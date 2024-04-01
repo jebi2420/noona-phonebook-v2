@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 
 const ContactItem = ({item}) => {
   return (
-    <Row>
+    <Row className='contact-item'>
       <Col lg={2}>
         <img 
             alt=""

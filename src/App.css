@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.contact-list-area{
+  width: 100%;
+}
+
 .search-input{
   margin-bottom: 10px;
+}
+
+.contact-item{
+  margin-top: 1em;
+  padding: 1.2em 0.5em;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
