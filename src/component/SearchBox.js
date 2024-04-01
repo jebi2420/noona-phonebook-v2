@@ -17,8 +17,10 @@ const SearchBox = () => {
   return (
     <Form onSubmit={searchByName} className="search-form">
       <Row>
+        <Form.Label>연락처 찾기</Form.Label>
           <Col lg={10}>
             <Form.Control 
+              className='search-input'
               type="text" 
               placeholder="이름을 입력해주세요"
               onChange={(event)=>setKeyword(event.target.value)}
