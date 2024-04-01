@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import ContactItem from '../ContactItem'
 import SearchBox from './SearchBox'
+import { Button } from 'react-bootstrap';
 
 const ContactList = () => {
   const {contactList, keyword} = useSelector((state)=>state);
@@ -17,9 +18,18 @@ const ContactList = () => {
     }
   }, [keyword, contactList]);
 
+  const resetSearch = () => {
+    setFilteredList(contactList);
+  };
+
   return (
     <div>
       <SearchBox />
+      {keyword !== "" && (
+        <Button onClick={resetSearch} className="mt-3">
+          연락처 돌아가기
+        </Button>
+      )}
       <div className="contact-list">
         {filteredList.map((item, index)=>(
           <ContactItem item={item} key={index} />
